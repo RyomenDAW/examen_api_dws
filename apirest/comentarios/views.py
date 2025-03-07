@@ -2,11 +2,11 @@ from django.shortcuts import render
 
 # Create your views here.
 from rest_framework import generics
-from .models import Comentario
+from .models import Comentarios
 from .serializers import ComentarioSerializer
 
 
 
 def inicio(request):
-    comentarios = Comentario.objects.all()
+    comentarios = Comentarios.objects.all()
     return render(request, "comentarios/inicio.html", {"comentarios": comentarios})

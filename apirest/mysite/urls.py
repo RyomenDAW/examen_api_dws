@@ -20,4 +20,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('comentarios.urls')),  # Incluir las rutas de la API manualmente
+    path('api/', include('comentarios.api_urls')),  # Ruta para la API REST
+
 ]

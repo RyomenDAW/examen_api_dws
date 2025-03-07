@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
 ]
 
-# AUTH_USER_MODEL = 'comentarios.CustomUser'
+AUTH_USER_MODEL = 'comentarios.User'
 
 
 MIDDLEWARE = [

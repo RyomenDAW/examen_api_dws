@@ -1,0 +1,709 @@
+[
+{
+    "model": "comentarios.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$P2F9935Scb1KYvPfVDb1E0$ksSMWijl1g6SIkb7vrVgRPAFK9eoDCqoE4f5TTOMdK4=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "yuta",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-03-07T11:42:32.783Z",
+        "rol": 3,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "comentarios.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$mJ2NZzKL5e5fVCdLPjNFJ9$tjgbWs5v6YoU3E4euY7vBWP6c/aU912XU2ykXEIirlM=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "banana",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-03-07T11:43:09.864Z",
+        "rol": 3,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "comentarios.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$GIbREg4Yv2x4ePEZhSE2cL$Ulk2qTc2OCy0taPyeJV1ABQ3iw3u4NiGy8E72cQNPgo=",
+        "last_login": "2025-03-07T13:33:36.174Z",
+        "is_superuser": true,
+        "username": "israel",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-03-07T12:17:35.726Z",
+        "rol": 3,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "comentarios.aplicacionmovil",
+    "pk": 1,
+    "fields": {
+        "nombre": "AJAX DWS",
+        "fechaCreacion": "2025-03-07"
+    }
+},
+{
+    "model": "comentarios.aplicacionmovil",
+    "pk": 2,
+    "fields": {
+        "nombre": "APPLE MUSIC",
+        "fechaCreacion": "2025-03-07"
+    }
+},
+{
+    "model": "comentarios.comentarios",
+    "pk": 1,
+    "fields": {
+        "texto": "Prueba de comentario",
+        "aplicacion": 1,
+        "usuario": 1,
+        "puntuacioncomentario": 4,
+        "fecha_comentario": "2020-12-06"
+    }
+},
+{
+    "model": "comentarios.comentarios",
+    "pk": 2,
+    "fields": {
+        "texto": "Prueba de un nuevo comentario",
+        "aplicacion": 1,
+        "usuario": 3,
+        "puntuacioncomentario": 3,
+        "fecha_comentario": "2005-12-13"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "comentarios",
+        "model": "aplicacionmovil"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "comentarios",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "comentarios",
+        "model": "comentarios"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "authtoken",
+        "model": "token"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "authtoken",
+        "model": "tokenproxy"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "52aey9efezfkgyq2bgzxrdojhvdngdgm",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSHSoXRw6d5vIMNjpGogKe3K-O_SpAvd3nPOfQtH25rd1tLi5iguAsTpd_MUnqnsID6o3KsMtazL7OWuyIM2easxva6H-3eQqeVejxN47LpBtnawBMSaAQiR4awQB1aGRzA6eJPQpBCU6jSCZpp8iuLzBeQwOEc:1tqWsj:ea9eiyBIw6D7Eun3mcc_jtHk4ZyUL5-BtILKB8siTdw",
+        "expire_date": "2025-03-21T12:32:49.811Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "8qeklk6n3avrdgelfuld7bogrgt6ie7m",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSHSoXRw6d5vIMNjpGogKe3K-O_SpAvd3nPOfQtH25rd1tLi5iguAsTpd_MUnqnsID6o3KsMtazL7OWuyIM2easxva6H-3eQqeVejxN47LpBtnawBMSaAQiR4awQB1aGRzA6eJPQpBCU6jSCZpp8iuLzBeQwOEc:1tqXpY:p3ZYsnH9jAt3JAP-YqCcdgaevj8w0Tn8LeSVvX7I6io",
+        "expire_date": "2025-03-21T13:33:36.179Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "mozpi0gahjr6neafcezj8nhl08imdr3i",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSHSoXRw6d5vIMNjpGogKe3K-O_SpAvd3nPOfQtH25rd1tLi5iguAsTpd_MUnqnsID6o3KsMtazL7OWuyIM2easxva6H-3eQqeVejxN47LpBtnawBMSaAQiR4awQB1aGRzA6eJPQpBCU6jSCZpp8iuLzBeQwOEc:1tqWux:Iqvy9ZjGjuMQwayz-kj51mR781_roPnytj7F4PrG2Ps",
+        "expire_date": "2025-03-21T12:35:07.966Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "nh76aggoudw9ai7xa6i4wt2nzmoxxm3y",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSHSoXRw6d5vIMNjpGogKe3K-O_SpAvd3nPOfQtH25rd1tLi5iguAsTpd_MUnqnsID6o3KsMtazL7OWuyIM2easxva6H-3eQqeVejxN47LpBtnawBMSaAQiR4awQB1aGRzA6eJPQpBCU6jSCZpp8iuLzBeQwOEc:1tqX53:2r5t6N5R7CVvGYER06x51f4Tg7DD6TIZ3qrnUmK8iDA",
+        "expire_date": "2025-03-21T12:45:33.066Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "yzrox7y4w19ayh9s5y61nya1afdbw5z2",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSHSoXRw6d5vIMNjpGogKe3K-O_SpAvd3nPOfQtH25rd1tLi5iguAsTpd_MUnqnsID6o3KsMtazL7OWuyIM2easxva6H-3eQqeVejxN47LpBtnawBMSaAQiR4awQB1aGRzA6eJPQpBCU6jSCZpp8iuLzBeQwOEc:1tqWeD:7j8e_3IWGLaoAgqv7Ud6M7kSIlRjgXrwAdDV3Sp7kzQ",
+        "expire_date": "2025-03-21T12:17:49.376Z"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add aplicacion movil",
+        "content_type": 1,
+        "codename": "add_aplicacionmovil"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change aplicacion movil",
+        "content_type": 1,
+        "codename": "change_aplicacionmovil"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete aplicacion movil",
+        "content_type": 1,
+        "codename": "delete_aplicacionmovil"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view aplicacion movil",
+        "content_type": 1,
+        "codename": "view_aplicacionmovil"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 2,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 2,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 2,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 2,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add comentarios",
+        "content_type": 3,
+        "codename": "add_comentarios"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change comentarios",
+        "content_type": 3,
+        "codename": "change_comentarios"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete comentarios",
+        "content_type": 3,
+        "codename": "delete_comentarios"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view comentarios",
+        "content_type": 3,
+        "codename": "view_comentarios"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 4,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 4,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 4,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 4,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 5,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 5,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 5,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 5,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 6,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 6,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 6,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 6,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 7,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 7,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 7,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 7,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 8,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 8,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 8,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 8,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add Token",
+        "content_type": 9,
+        "codename": "add_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change Token",
+        "content_type": 9,
+        "codename": "change_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete Token",
+        "content_type": 9,
+        "codename": "delete_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view Token",
+        "content_type": 9,
+        "codename": "view_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add token",
+        "content_type": 10,
+        "codename": "add_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change token",
+        "content_type": 10,
+        "codename": "change_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete token",
+        "content_type": 10,
+        "codename": "delete_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view token",
+        "content_type": 10,
+        "codename": "view_tokenproxy"
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+        "name": "creadoraplicacinones",
+        "permissions": [
+            1,
+            2,
+            3,
+            4,
+            9,
+            10,
+            11,
+            12
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+        "name": "clientes",
+        "permissions": [
+            9,
+            10,
+            11,
+            12
+        ]
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2025-03-07T12:22:20.253Z",
+        "user": 3,
+        "content_type": 1,
+        "object_id": "1",
+        "object_repr": "AJAX DWS",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2025-03-07T12:35:15.292Z",
+        "user": 3,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "d3605b10aa09982db37327488d7b8261cae09f58",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2025-03-07T12:45:43.777Z",
+        "user": 3,
+        "content_type": 1,
+        "object_id": "2",
+        "object_repr": "APPLE MUSIC",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2025-03-07T13:34:04.135Z",
+        "user": 3,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "clientes",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2025-03-07T13:34:29.202Z",
+        "user": 3,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "clientes",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2025-03-07T13:34:40.553Z",
+        "user": 3,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "creadoraplicacinones",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "54f26e1bb4385759f684339c7be1d1fe5c7dfbdd",
+    "fields": {
+        "user": 2,
+        "created": "2025-03-07T11:43:10.312Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "aaeda8fbc2c0b5748a037112f27b7a2b348a88be",
+    "fields": {
+        "user": 1,
+        "created": "2025-03-07T11:42:33.247Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "d3605b10aa09982db37327488d7b8261cae09f58",
+    "fields": {
+        "user": 3,
+        "created": "2025-03-07T12:35:15.292Z"
+    }
+}
+]

@@ -1,9 +1,9 @@
 from rest_framework import generics
-from .models import Comentario
+from .models import Comentarios
 from .serializers import ComentarioSerializer
+from .models import User
 
-
-from django.contrib.auth.models import User, Group  # <-- grupo/roles
+from django.contrib.auth.models import Group  # <-- grupo/roles
 from django.contrib.auth import authenticate
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
@@ -11,16 +11,16 @@ from rest_framework.authtoken.models import Token
 from rest_framework import status
 
 class ComentarioListCreate(generics.ListCreateAPIView):
-    queryset = Comentario.objects.all()
+    queryset = Comentarios.objects.all()
     serializer_class = ComentarioSerializer
 
 class ComentarioDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Comentario.objects.all()
+    queryset = Comentarios.objects.all()
     serializer_class = ComentarioSerializer
 
 
 
-@api_view(['POST'])
+@api_view(['POST']) 
 def register_user(request):
     username = request.data.get("username")
     password = request.data.get("password")
@@ -36,19 +36,20 @@ def register_user(request):
     user.save()
 
     # Verificar que los grupos existen, si no, crearlos
-    cliente_group, _ = Group.objects.get_or_create(name="ClienteAPP")
-    creador_group, _ = Group.objects.get_or_create(name="CreadorDeAplicaciones")
+    creador_group, _ = Group.objects.get_or_create(name="creadoraplicacinones")
+    cliente_group, _ = Group.objects.get_or_create(name="clientes")
 
     # Asignar usuario al grupo correcto
-    if grupo == "ClienteAPP":
+    if grupo == "clientes":
         user.groups.add(cliente_group)
-    elif grupo == "CreadorDeAplicaciones":
+    elif grupo == "creadoraplicacinones":
         user.groups.add(creador_group)
 
     # Crear un token de autenticación para el usuario
     token, _ = Token.objects.get_or_create(user=user)
     return Response({"message": "Usuario registrado con éxito", "token": token.key}, status=status.HTTP_201_CREATED)
 
+       
 @api_view(['POST'])
 def login_user(request):
     username = request.data.get("username")
